@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Handmade Space Stories</title>
+  <meta name="description" content="Reach the editorial team at Handmade Space Stories. Pitches, questions, and collaboration inquiries.">
+  <link rel="canonical" href="https://handmadespacestories.com/contact.html">
+  <meta property="og:title" content="Contact — Handmade Space Stories">
+  <meta property="og:description" content="Reach the editorial team at Handmade Space Stories.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://handmadespacestories.com/contact.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&h=630&fit=crop">
+  <style>
+    /* RESET & BASE */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #faf9f7;
+      font-family: 'Georgia', 'Times New Roman', serif;
+      color: #1e1e1e;
+      line-height: 1.65;
+      font-size: 1.125rem;
+      padding: 0 1.5rem;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      background: #fffcf9;
+      box-shadow: 0 0 40px rgba(0, 0, 0, 0.02);
+      padding: 2rem 2.5rem 0;
+      border-left: 1px solid #e8e2db;
+      border-right: 1px solid #e8e2db;
+    }
+
+    /* TYPOGRAPHY */
+    h1, h2, h3, h4 {
+      font-family: 'Inter', 'Helvetica Neue', sans-serif;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      color: #1a1a1a;
+    }
+
+    h1 { font-size: 2.6rem; margin-bottom: 0.5rem; }
+    h2 { font-size: 2rem; margin: 2.5rem 0 1.25rem; border-bottom: 1px solid #e8e2db; padding-bottom: 0.5rem; }
+    h3 { font-size: 1.4rem; margin: 1.8rem 0 0.8rem; }
+
+    p {
+      margin-bottom: 1.4rem;
+    }
+
+    a {
+      color: #1e1e1e;
+      text-decoration: none;
+      border-bottom: 1px solid #c9b9a8;
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    a:hover {
+      border-bottom-color: #1e1e1e;
+      color: #000;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 1.8rem 0;
+      border-radius: 2px;
+      filter: grayscale(0.1) contrast(1.02);
+    }
+
+    /* HEADER */
+    .blog-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 1.8rem 0 1.2rem;
+      border-bottom: 2px solid #1a1a1a;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .logo {
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 1.8rem;
+      letter-spacing: -0.03em;
+      color: #1a1a1a;
+      border-bottom: none;
+    }
+
+    .logo span {
+      font-weight: 300;
+      color: #8a7a6a;
+    }
+
+    .main-nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      list-style: none;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .main-nav a {
+      border-bottom: none;
+      color: #3d3d3d;
+      font-weight: 400;
+    }
+
+    .main-nav a:hover {
+      color: #000;
+      border-bottom: 1px solid #1a1a1a;
+    }
+
+    .main-nav a.active {
+      border-bottom: 1px solid #1a1a1a;
+      color: #000;
+      font-weight: 500;
+    }
+
+    /* PAGE TITLE */
+    .page-title {
+      margin: 2.5rem 0 1rem;
+    }
+
+    .page-title h1 {
+      font-size: 3rem;
+      font-weight: 500;
+      letter-spacing: -0.03em;
+    }
+
+    .page-title .subhead {
+      font-family: 'Inter', sans-serif;
+      font-size: 1.05rem;
+      color: #5a4a3a;
+      max-width: 650px;
+      margin-top: 0.25rem;
+    }
+
+    /* CONTACT GRID */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      margin: 2.5rem 0 3rem;
+    }
+
+    .contact-form {
+      background: #f6f3ef;
+      padding: 2rem 2rem 1.8rem;
+      border-left: 4px solid #1a1a1a;
+    }
+
+    .contact-form h3 {
+      margin-top: 0;
+      margin-bottom: 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.4rem;
+    }
+
+    .form-group label {
+      display: block;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #5a4a3a;
+      margin-bottom: 0.4rem;
+      font-weight: 500;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 0.8rem 1rem;
+      border: 1px solid #ddd6ce;
+      background: #fff;
+      font-family: 'Georgia', serif;
+      font-size: 1rem;
+      color: #1a1a1a;
+      border-radius: 2px;
+      transition: border-color 0.2s;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      outline: none;
+      border-color: #1a1a1a;
+    }
+
+    .form-group textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+
+    .contact-form button {
+      background: #1a1a1a;
+      color: #fff;
+      border: none;
+      padding: 0.9rem 2.4rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-weight: 500;
+      cursor: pointer;
+      border-radius: 2px;
+      transition: background 0.2s;
+      margin-top: 0.5rem;
+    }
+
+    .contact-form button:hover {
+      background: #3d2e22;
+    }
+
+    .form-message {
+      margin-top: 1rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      color: #5a4a3a;
+      min-height: 1.5rem;
+    }
+
+    /* CONTACT INFO */
+    .contact-info {
+      padding-top: 0.5rem;
+    }
+
+    .contact-info .info-block {
+      margin-bottom: 2.2rem;
+    }
+
+    .contact-info h4 {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #5a4a3a;
+      margin-bottom: 0.6rem;
+      font-weight: 500;
+    }
+
+    .contact-info p {
+      font-size: 1.05rem;
+      margin-bottom: 0.3rem;
+      color: #2d2d2d;
+    }
+
+    .contact-info .note {
+      font-size: 0.9rem;
+      color: #8a7a6a;
+      font-style: italic;
+    }
+
+    .contact-info a {
+      border-bottom: 1px solid #c9b9a8;
+    }
+
+    .contact-info a:hover {
+      border-bottom-color: #1a1a1a;
+    }
+
+    /* SMALL DIVIDER */
+    .divider {
+      border: none;
+      border-top: 1px solid #e8e2db;
+      margin: 2.5rem 0;
+    }
+
+    /* FAQ (reused) */
+    .faq-section {
+      margin: 2rem 0 2rem;
+      border-top: 1px solid #e8e2db;
+      padding-top: 2rem;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid #e8e2db;
+      padding: 1rem 0;
+      cursor: pointer;
+    }
+
+    .faq-question {
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      font-size: 1.1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .faq-question::after {
+      content: '+';
+      font-size: 1.4rem;
+      font-weight: 300;
+      color: #8a7a6a;
+      transition: transform 0.2s;
+    }
+
+    .faq-item.open .faq-question::after {
+      content: '−';
+      transform: rotate(180deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease;
+      font-size: 1rem;
+      color: #3d3d3d;
+      padding-right: 2rem;
+    }
+
+    .faq-item.open .faq-answer {
+      max-height: 300px;
+      margin-top: 0.8rem;
+    }
+
+    /* NEWSLETTER */
+    .newsletter {
+      background: #1a1a1a;
+      color: #f0ece7;
+      padding: 3rem 2.5rem;
+      margin: 3rem 0 0;
+      text-align: center;
+    }
+
+    .newsletter h2 {
+      color: #fff;
+      border-bottom: none;
+      margin-top: 0;
+      font-size: 1.8rem;
+    }
+
+    .newsletter p {
+      color: #b9afa5;
+      max-width: 500px;
+      margin: 0.5rem auto 1.5rem;
+    }
+
+    .newsletter-form {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .newsletter-form input {
+      padding: 0.9rem 1.2rem;
+      border: none;
+      border-radius: 2px;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+      width: 280px;
+      background: #f0ece7;
+    }
+
+    .newsletter-form button {
+      background: #c9b9a8;
+      border: none;
+      padding: 0.9rem 2rem;
+      font-family: 'Inter', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #1a1a1a;
+      cursor: pointer;
+      border-radius: 2px;
+      transition: background 0.2s;
+    }
+
+    .newsletter-form button:hover {
+      background: #ddd0c2;
+    }
+
+    /* FOOTER */
+    .editorial-footer {
+      border-top: 2px solid #1a1a1a;
+      margin-top: 3rem;
+      padding: 2.5rem 0 3rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.85rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 2rem;
+    }
+
+    .footer-col h5 {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #5a4a3a;
+      margin-bottom: 1rem;
+      font-weight: 500;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col li {
+      margin-bottom: 0.6rem;
+    }
+
+    .footer-col a {
+      border-bottom: none;
+      color: #3d3d3d;
+    }
+
+    .footer-col a:hover {
+      border-bottom: 1px solid #1a1a1a;
+    }
+
+    .copyright {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding-top: 2rem;
+      color: #8a7a6a;
+      font-size: 0.8rem;
+      border-top: 1px solid #e8e2db;
+      margin-top: 1rem;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+    }
+
+    @media (max-width: 700px) {
+      body { font-size: 1rem; padding: 0 0.8rem; }
+      .container { padding: 1.5rem 1.2rem 0; }
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.6rem; }
+      .page-title h1 { font-size: 2.2rem; }
+      .blog-header { flex-direction: column; align-items: flex-start; }
+      .main-nav ul { gap: 1rem; }
+      .contact-form { padding: 1.5rem; }
+      .newsletter { padding: 2rem 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <!-- HEADER -->
+  <header class="blog-header">
+    <a href="index.html" class="logo" aria-label="Handmade Space Stories home">Handmade <span>Space Stories</span></a>
+    <nav class="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="terms.html">Terms Of Privacy</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="cookies.html">Cookies Policy</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+        <li><a href="categories.html">Categories</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- PAGE TITLE -->
+  <div class="page-title">
+    <h1>Contact</h1>
+    <p class="subhead">Pitches, questions, and collaboration — we read every message and respond within two weeks.</p>
+  </div>
+
+  <!-- CONTACT GRID -->
+  <div class="contact-grid">
+    <!-- FORM -->
+    <div class="contact-form">
+      <h3>Send us a note</h3>
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" placeholder="e.g. Alex Rivera" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <select id="subject" name="subject">
+            <option value="pitch">Article pitch</option>
+            <option value="question">General question</option>
+            <option value="collaboration">Collaboration</option>
+            <option value="press">Press / media</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Tell us what’s on your mind…" required></textarea>
+        </div>
+        <button type="submit">Send message</button>
+        <div class="form-message" id="formMessage"></div>
+      </form>
+    </div>
+
+    <!-- INFO -->
+    <div class="contact-info">
+      <div class="info-block">
+        <h4>Editorial</h4>
+        <p>Elena Marchetti, Editor-in-chief</p>
+        <p><a href="mailto:editors@handmadespacestories.com">editors@handmadespacestories.com</a></p>
+        <p class="note">For pitches: please include a short outline and a link to your portfolio.</p>
+      </div>
+
+      <div class="info-block">
+        <h4>General inquiries</h4>
+        <p><a href="mailto:hello@handmadespacestories.com">hello@handmadespacestories.com</a></p>
+      </div>
+
+      <div class="info-block">
+        <h4>Studio</h4>
+        <p>Handmade Space Stories</p>
+        <p>Via dei Piatti 8</p>
+        <p>20123 Milano, Italy</p>
+        <p class="note">Visits by appointment only.</p>
+      </div>
+
+      <div class="info-block">
+        <h4>Follow</h4>
+        <p><a href="#">Instagram</a> · <a href="#">Pinterest</a> · <a href="#">LinkedIn</a></p>
+      </div>
+
+      <div class="info-block">
+        <h4>Response time</h4>
+        <p>We aim to reply within 10–14 working days. For urgent press inquiries, please mark your subject line “URGENT”.</p>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- FAQ SECTION (reused) -->
+  <section class="faq-section" aria-label="Frequently asked questions">
+    <h2>Before you write</h2>
+    <div class="faq-item">
+      <div class="faq-question">Do you accept guest articles or pitches?</div>
+      <div class="faq-answer">Yes — we welcome pitches from architects, interior designers, and writers. Please send a short outline (150–200 words) and a link to your portfolio. We respond within two weeks.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Can I republish your content?</div>
+      <div class="faq-answer">Our articles are for inspiration and education. You may quote or reference with proper attribution and a link back to the original. For full republication or commercial use, please contact us for licensing.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Do you offer design consultations?</div>
+      <div class="faq-answer">We are a editorial publication, not a design firm. However, our editors occasionally take on speaking engagements and workshops. Reach out with details.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">I’m having trouble with the newsletter. Who can help?</div>
+      <div class="faq-answer">Email hello@handmadespacestories.com with the subject “Newsletter help” and we’ll sort it out.</div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter" aria-label="Newsletter signup">
+    <h2>The Sunday Edit</h2>
+    <p>One thoughtful email each week — new articles, design ideas, and reading recommendations. No spam, ever.</p>
+    <form class="newsletter-form" id="newsletterForm">
+      <input type="email" placeholder="Your email address" aria-label="Email address" required>
+      <button type="submit">Subscribe</button>
+    </form>
+    <p id="newsletterMsg" style="font-size:0.8rem; margin-top:1rem; color:#b9afa5;"></p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="editorial-footer">
+    <div class="footer-col">
+      <h5>Handmade Space Stories</h5>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Use</a></li>
+        <li><a href="cookies.html">Cookie Policy</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Categories</h5>
+      <ul>
+        <li><a href="categories.html">Interior Design</a></li>
+        <li><a href="categories.html">Architecture</a></li>
+        <li><a href="categories.html">Home Design</a></li>
+        <li><a href="categories.html">Materials</a></li>
+        <li><a href="categories.html">Lighting</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Follow</h5>
+      <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Pinterest</a></li>
+        <li><a href="#">LinkedIn</a></li>
+      </ul>
+    </div>
+    <div class="copyright">
+      © 2025 Handmade Space Stories. All rights reserved. Independent editorial publication.
+    </div>
+  </footer>
+</div>
+
+<!-- JAVASCRIPT: FAQ, NEWSLETTER, CONTACT FORM -->
+<script>
+  (function() {
+    // FAQ toggle
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+      const question = item.querySelector('.faq-question');
+      question.addEventListener('click', () => {
+        item.classList.toggle('open');
+      });
+    });
+
+    // Newsletter (simulated)
+    const newsletterForm = document.getElementById('newsletterForm');
+    const newsletterMsg = document.getElementById('newsletterMsg');
+    if (newsletterForm) {
+      newsletterForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const input = newsletterForm.querySelector('input');
+        if (input.value.trim()) {
+          newsletterMsg.textContent = 'Thank you — you are subscribed. Check your inbox for a confirmation.';
+          input.value = '';
+        } else {
+          newsletterMsg.textContent = 'Please enter a valid email address.';
+        }
+      });
+    }
+
+    // Contact form (simulated)
+    const contactForm = document.getElementById('contactForm');
+    const formMessage = document.getElementById('formMessage');
+    if (contactForm) {
+      contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const message = document.getElementById('message').value.trim();
+
+        if (!name || !email || !message) {
+          formMessage.textContent = 'Please fill in all required fields.';
+          formMessage.style.color = '#b33a3a';
+          return;
+        }
+
+        // Simulate success
+        formMessage.textContent = 'Thank you, ' + name + '. Your message has been sent — we’ll be in touch soon.';
+        formMessage.style.color = '#5a4a3a';
+        contactForm.reset();
+      });
+    }
+  })();
+</script>
+</body>
+</html>

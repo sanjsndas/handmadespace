@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Handmade Space Stories | Interior Design & Architecture Journal</title>
+  <meta name="description" content="Learn about Handmade Space Stories — an independent editorial publication covering interior design, architecture, materials, and the principles behind thoughtful living spaces.">
+  <link rel="canonical" href="https://handmadespacestories.com/about.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="About — Handmade Space Stories">
+  <meta property="og:description" content="Independent editorial publication covering interior design, architecture, and the principles behind thoughtful living spaces.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://handmadespacestories.com/about.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&h=630&fit=crop">
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About Handmade Space Stories",
+    "description": "Independent editorial publication covering interior design, architecture, and the principles behind thoughtful living spaces.",
+    "url": "https://handmadespacestories.com/about.html",
+    "author": {
+      "@type": "Person",
+      "name": "Elena Marchetti"
+    }
+  }
+  </script>
+  <style>
+    /* RESET & BASE */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #faf9f7;
+      font-family: 'Georgia', 'Times New Roman', serif;
+      color: #1e1e1e;
+      line-height: 1.65;
+      font-size: 1.125rem;
+      padding: 0 1.5rem;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      background: #fffcf9;
+      box-shadow: 0 0 40px rgba(0, 0, 0, 0.02);
+      padding: 2rem 2.5rem 0;
+      border-left: 1px solid #e8e2db;
+      border-right: 1px solid #e8e2db;
+    }
+
+    /* TYPOGRAPHY */
+    h1, h2, h3, h4 {
+      font-family: 'Inter', 'Helvetica Neue', sans-serif;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      color: #1a1a1a;
+    }
+
+    h1 { font-size: 2.6rem; margin-bottom: 0.5rem; }
+    h2 { font-size: 2rem; margin: 2.5rem 0 1.25rem; border-bottom: 1px solid #e8e2db; padding-bottom: 0.5rem; }
+    h3 { font-size: 1.4rem; margin: 1.8rem 0 0.8rem; }
+    h4 { font-size: 1.15rem; margin: 1.2rem 0 0.5rem; }
+
+    p {
+      margin-bottom: 1.4rem;
+    }
+
+    a {
+      color: #1e1e1e;
+      text-decoration: none;
+      border-bottom: 1px solid #c9b9a8;
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    a:hover {
+      border-bottom-color: #1e1e1e;
+      color: #000;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 1.8rem 0;
+      border-radius: 2px;
+      filter: grayscale(0.1) contrast(1.02);
+    }
+
+    /* HEADER */
+    .blog-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 1.8rem 0 1.2rem;
+      border-bottom: 2px solid #1a1a1a;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .logo {
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 1.8rem;
+      letter-spacing: -0.03em;
+      color: #1a1a1a;
+      border-bottom: none;
+    }
+
+    .logo span {
+      font-weight: 300;
+      color: #8a7a6a;
+    }
+
+    .main-nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      list-style: none;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .main-nav a {
+      border-bottom: none;
+      color: #3d3d3d;
+      font-weight: 400;
+    }
+
+    .main-nav a:hover {
+      color: #000;
+      border-bottom: 1px solid #1a1a1a;
+    }
+
+    /* ABOUT LAYOUT */
+    .about-layout {
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: 4rem;
+      padding: 2.5rem 0 3rem;
+    }
+
+    .about-content {
+      max-width: 720px;
+    }
+
+    .about-lead {
+      font-size: 1.35rem;
+      line-height: 1.55;
+      color: #2d2d2d;
+      margin-bottom: 2rem;
+      font-style: italic;
+    }
+
+    .about-content h2 {
+      margin-top: 2.8rem;
+    }
+
+    .about-content h2:first-of-type {
+      margin-top: 0;
+    }
+
+    .about-content ul {
+      margin: 1rem 0 1.8rem 1.5rem;
+      list-style-type: square;
+    }
+
+    .about-content li {
+      margin-bottom: 0.7rem;
+      padding-left: 0.3rem;
+    }
+
+    .about-content blockquote {
+      border-left: 3px solid #c9b9a8;
+      padding-left: 1.5rem;
+      margin: 2rem 0;
+      font-style: italic;
+      color: #3d3d3d;
+    }
+
+    .about-content blockquote p {
+      margin-bottom: 0.5rem;
+    }
+
+    /* SIDEBAR (reuse from main) */
+    .sidebar {
+      font-family: 'Inter', sans-serif;
+    }
+
+    .sidebar-widget {
+      margin-bottom: 3rem;
+      border-bottom: 1px solid #e8e2db;
+      padding-bottom: 1.8rem;
+    }
+
+    .sidebar-widget h4 {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #5a4a3a;
+      margin-bottom: 1.2rem;
+      font-weight: 500;
+    }
+
+    .sidebar-widget ul {
+      list-style: none;
+    }
+
+    .sidebar-widget li {
+      margin-bottom: 0.9rem;
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+
+    .sidebar-widget li a {
+      border-bottom: none;
+      color: #2d2d2d;
+    }
+
+    .sidebar-widget li a:hover {
+      border-bottom: 1px solid #1a1a1a;
+    }
+
+    .editor-box {
+      background: #f6f3ef;
+      padding: 1.8rem 1.5rem;
+      border-radius: 2px;
+      margin-bottom: 2.5rem;
+    }
+
+    .editor-box p {
+      font-size: 0.95rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .editor-box .name {
+      font-weight: 600;
+      font-size: 0.95rem;
+      margin-bottom: 0.2rem;
+    }
+
+    /* TEAM GRID */
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      margin: 1.5rem 0 2rem;
+    }
+
+    .team-member {
+      text-align: left;
+    }
+
+    .team-member img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      margin: 0 0 1rem;
+      border-radius: 2px;
+    }
+
+    .team-member h4 {
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      margin: 0 0 0.2rem;
+      font-weight: 500;
+    }
+
+    .team-member .role {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: #8a7a6a;
+      margin-bottom: 0.5rem;
+    }
+
+    .team-member p {
+      font-size: 0.95rem;
+      color: #3d3d3d;
+    }
+
+    /* NEWSLETTER (reuse) */
+    .newsletter {
+      background: #1a1a1a;
+      color: #f0ece7;
+      padding: 3rem 2.5rem;
+      margin: 3rem 0 0;
+      text-align: center;
+    }
+
+    .newsletter h2 {
+      color: #fff;
+      border-bottom: none;
+      margin-top: 0;
+      font-size: 1.8rem;
+    }
+
+    .newsletter p {
+      color: #b9afa5;
+      max-width: 500px;
+      margin: 0.5rem auto 1.5rem;
+    }
+
+    .newsletter-form {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .newsletter-form input {
+      padding: 0.9rem 1.2rem;
+      border: none;
+      border-radius: 2px;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+      width: 280px;
+      background: #f0ece7;
+    }
+
+    .newsletter-form button {
+      background: #c9b9a8;
+      border: none;
+      padding: 0.9rem 2rem;
+      font-family: 'Inter', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #1a1a1a;
+      cursor: pointer;
+      border-radius: 2px;
+      transition: background 0.2s;
+    }
+
+    .newsletter-form button:hover {
+      background: #ddd0c2;
+    }
+
+    /* FOOTER (reuse) */
+    .editorial-footer {
+      border-top: 2px solid #1a1a1a;
+      margin-top: 3rem;
+      padding: 2.5rem 0 3rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.85rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 2rem;
+    }
+
+    .footer-col h5 {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #5a4a3a;
+      margin-bottom: 1rem;
+      font-weight: 500;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col li {
+      margin-bottom: 0.6rem;
+    }
+
+    .footer-col a {
+      border-bottom: none;
+      color: #3d3d3d;
+    }
+
+    .footer-col a:hover {
+      border-bottom: 1px solid #1a1a1a;
+    }
+
+    .copyright {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding-top: 2rem;
+      color: #8a7a6a;
+      font-size: 0.8rem;
+      border-top: 1px solid #e8e2db;
+      margin-top: 1rem;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 1024px) {
+      .about-layout {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+      .sidebar {
+        order: 2;
+        border-top: 1px solid #e8e2db;
+        padding-top: 2rem;
+      }
+    }
+
+    @media (max-width: 700px) {
+      body { font-size: 1rem; padding: 0 0.8rem; }
+      .container { padding: 1.5rem 1.2rem 0; }
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.6rem; }
+      .blog-header { flex-direction: column; align-items: flex-start; }
+      .main-nav ul { gap: 1rem; }
+      .newsletter { padding: 2rem 1.2rem; }
+      .about-lead { font-size: 1.15rem; }
+      .team-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 480px) {
+      .team-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <!-- HEADER -->
+  <header class="blog-header">
+    <a href="index.html" class="logo" aria-label="Handmade Space Stories home">Handmade <span>Space Stories</span></a>
+    <nav class="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="terms.html">Terms Of Privacy</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="cookies.html">Cookies Policy</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+        <li><a href="categories.html">Categories</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN LAYOUT: ABOUT + SIDEBAR -->
+  <div class="about-layout">
+    <!-- MAIN CONTENT -->
+    <main class="about-content">
+      <h1>About Handmade Space Stories</h1>
+      <p class="about-lead">An independent editorial publication exploring the intersection of craft, sustainability, and everyday living — one space at a time.</p>
+
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=600&fit=crop" alt="Warm interior with natural light, timber, and textured walls — the Handmade Space Stories aesthetic">
+
+      <h2>Our Story</h2>
+      <p>Handmade Space Stories began in 2019 as a personal notebook — a place to document the quiet details that make a home feel lived-in and intentional. What started as a series of sketches and material samples shared among a small circle of architects and designers has grown into a full editorial journal read by thousands of homeowners, design professionals, and curious minds around the world.</p>
+      <p>We believe that good design is not about trends or perfection. It is about understanding how materials age, how light moves through a room, and how a space can support the rhythms of daily life. Every article we publish is an invitation to look closer — at the grain of a timber floor, the patina of an unlacquered brass tap, or the way a courtyard brings sky into the center of a home.</p>
+
+      <h2>What We Publish</h2>
+      <p>Our editorial covers six core areas, each explored through long-form articles, practical guides, and case studies:</p>
+      <ul>
+        <li><strong>Interior Design</strong> — the art of arranging rooms, textures, and objects to create atmosphere and function.</li>
+        <li><strong>Architecture</strong> — residential projects, from courtyard houses to passive-energy envelopes.</li>
+        <li><strong>Home Design</strong> — practical advice on kitchens, living spaces, and the details that make a house work.</li>
+        <li><strong>Materials</strong> — how stone, timber, metal, and concrete behave over time, and why patina matters.</li>
+        <li><strong>Lighting</strong> — daylight strategy, layered artificial light, and the science of visual comfort.</li>
+        <li><strong>Space Planning</strong> — how to zone, divide, and organize homes for real life, not just photographs.</li>
+      </ul>
+      <p>We do not publish listicles, sponsored content, or recycled press releases. Every piece is written by a practicing architect, designer, or journalist with direct experience in the field.</p>
+
+      <h2>Our Editorial Principles</h2>
+      <blockquote>
+        <p>“A home is not a showroom. It is a living, breathing space that changes with the people inside it. Our job is to help you understand the principles — so you can make your own choices with confidence.”</p>
+        <p style="font-size:0.9rem; color:#8a7a6a; font-style:normal;">— Elena Marchetti, Editor-in-Chief</p>
+      </blockquote>
+      <p>We hold to three simple principles:</p>
+      <ul>
+        <li><strong>Depth over speed.</strong> We take the time to research, interview, and test ideas before publishing.</li>
+        <li><strong>Honesty over hype.</strong> We recommend materials and methods we have used ourselves, and we tell you when something is not worth the investment.</li>
+        <li><strong>Craft over trend.</strong> We are more interested in how a surface will look in ten years than in what is fashionable this season.</li>
+      </ul>
+
+      <h2>Meet the Team</h2>
+      <div class="team-grid">
+        <div class="team-member">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop" alt="Elena Marchetti, Editor-in-Chief">
+          <h4>Elena Marchetti</h4>
+          <div class="role">Editor-in-Chief</div>
+          <p>Architect and writer. Elena founded Handmade Space Stories to document the quiet intelligence of well-made homes. She splits her time between Milan and Copenhagen.</p>
+        </div>
+        <div class="team-member">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop" alt="Marcus Feld, Architecture Editor">
+          <h4>Marcus Feld</h4>
+          <div class="role">Architecture Editor</div>
+          <p>Marcus is a residential architect with a focus on courtyard houses and passive design. He has built projects across Europe and South America.</p>
+        </div>
+        <div class="team-member">
+          <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop" alt="Clara Weiss, Materials Editor">
+          <h4>Clara Weiss</h4>
+          <div class="role">Materials Editor</div>
+          <p>Clara is a material scientist turned design writer. She is fascinated by patina, aging, and the sensory qualities of surfaces.</p>
+        </div>
+        <div class="team-member">
+          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop" alt="Jonas Rieder, Lighting Editor">
+          <h4>Jonas Rieder</h4>
+          <div class="role">Lighting Editor</div>
+          <p>Jonas is a lighting designer who has worked on residential and hospitality projects. He believes daylight is the most underrated design tool.</p>
+        </div>
+      </div>
+
+      <h2>Work With Us</h2>
+      <p>We are always open to collaborations with architects, designers, makers, and brands that share our values. If you have a project you would like us to consider for editorial coverage, or if you would like to pitch a guest article, please <a href="contact.html">get in touch</a>.</p>
+      <p>For advertising and partnership enquiries, please contact <a href="mailto:partners@handmadespacestories.com">partners@handmadespacestories.com</a>.</p>
+    </main>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="editor-box">
+        <p class="name">Elena Marchetti</p>
+        <p>Editor-in-chief. Architect and writer covering the intersection of craft, sustainability, and everyday living.</p>
+        <p style="font-size:0.8rem; color:#8a7a6a; margin-bottom:0;">— Handmade Space Stories</p>
+      </div>
+
+      <div class="sidebar-widget">
+        <h4>Popular This Month</h4>
+        <ul>
+          <li class="popular-item"><a href="#">The Quiet Power of Imperfect Materials</a><span>8 min read</span></li>
+          <li class="popular-item"><a href="#">Layered Lighting: A Practical Guide</a><span>9 min read</span></li>
+          <li class="popular-item"><a href="#">Small Space, Big Ideas: 15 Strategies</a><span>10 min read</span></li>
+          <li class="popular-item"><a href="#">The 10 Most Common Interior Design Mistakes</a><span>11 min read</span></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-widget">
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="#">Interior Design (24)</a></li>
+          <li><a href="#">Architecture (18)</a></li>
+          <li><a href="#">Home Design (15)</a></li>
+          <li><a href="#">Materials (12)</a></li>
+          <li><a href="#">Lighting (9)</a></li>
+          <li><a href="#">Space Planning (11)</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-widget">
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Pinterest</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter" aria-label="Newsletter signup">
+    <h2>The Sunday Edit</h2>
+    <p>One thoughtful email each week — new articles, design ideas, and reading recommendations. No spam, ever.</p>
+    <form class="newsletter-form" id="newsletterForm">
+      <input type="email" placeholder="Your email address" aria-label="Email address" required>
+      <button type="submit">Subscribe</button>
+    </form>
+    <p id="newsletterMsg" style="font-size:0.8rem; margin-top:1rem; color:#b9afa5;"></p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="editorial-footer">
+    <div class="footer-col">
+      <h5>Handmade Space Stories</h5>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Use</a></li>
+        <li><a href="cookies.html">Cookie Policy</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Categories</h5>
+      <ul>
+        <li><a href="#">Interior Design</a></li>
+        <li><a href="#">Architecture</a></li>
+        <li><a href="#">Home Design</a></li>
+        <li><a href="#">Materials</a></li>
+        <li><a href="#">Lighting</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Follow</h5>
+      <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Pinterest</a></li>
+        <li><a href="#">LinkedIn</a></li>
+      </ul>
+    </div>
+    <div class="copyright">
+      © 2025 Handmade Space Stories. All rights reserved. Independent editorial publication.
+    </div>
+  </footer>
+</div>
+
+<!-- JAVASCRIPT: NEWSLETTER -->
+<script>
+  (function() {
+    const newsletterForm = document.getElementById('newsletterForm');
+    const newsletterMsg = document.getElementById('newsletterMsg');
+    if (newsletterForm) {
+      newsletterForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const input = newsletterForm.querySelector('input');
+        if (input.value.trim()) {
+          newsletterMsg.textContent = 'Thank you — you are subscribed. Check your inbox for a confirmation.';
+          input.value = '';
+        } else {
+          newsletterMsg.textContent = 'Please enter a valid email address.';
+        }
+      });
+    }
+  })();
+</script>
+</body>
+</html>
